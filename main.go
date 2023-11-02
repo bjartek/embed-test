@@ -3,16 +3,11 @@ package main
 import (
 	_ "embed"
 	"fmt"
-)
 
-//go:embed foo.txt
-var Foo string
+	"github.com/bjartek/embed-test/foo"
+)
 
 func main() {
 
-	fmt.Println(Foo)
-}
-
-func GetFoo() string {
-	return Foo
+	fmt.Println(foo.GetFoo())
 }
