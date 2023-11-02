@@ -6,9 +6,13 @@ import (
 )
 
 //go:embed foo.txt
-var foo string
+var Foo string
 
 func main() {
 
-	fmt.Println(foo)
+	fmt.Println(Foo)
+}
+
+func GetFoo() string {
+	return Foo
 }
